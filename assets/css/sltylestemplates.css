@@ -1,0 +1,57 @@
+/* Resto del código de styles.css */
+
+/* Estilo para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999; /* Asegura que el modal esté encima del resto del contenido */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+  
+  .cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 50%;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+  
+  /* Estilo para los enlaces de las miniaturas */
+  .gallery .template a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery .template a:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Resto del código de styles.css */
+  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>E-mail contact</title>
+</head>
+<body>
+    <div class="contenedor">
+    <form id="formulario" action="send.php" method="post">
+        <h1>Contact</h1>
+        <input id="nombre" type="text" name="name" placeholder="Name" required>
+        <input id="correo" type="email" name="email" placeholder="E-mail" required>
+        <textarea id="mensaje" name="message" placeholder="Message" required></textarea>
+        <button class="btn-neon" type="submit" value="Send">
+            <span id="span1"></span>
+            <span id="span2"></span>
+            <span id="span3"></span>
+            <span id="span4"></span>
+            Enviar
+        </button>
+        </form>   
+    </div>
+</body>
+</html>

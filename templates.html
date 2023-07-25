@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Plantillas</title>
+  <link rel="stylesheet" href="assets/css/sltylestemplates.css">
+</head>
+<body>
+  <header>
+    <h1>Mis Plantillas</h1>
+  </header>
+
+  <div class="gallery">
+    <div class="template">
+      <a href="#" onclick="mostrarModal('templates/plantilla1/index.html')">
+        <img src="plantillas/plantilla1/thumbnail.jpg" alt="Plantilla 1">
+        <h3>Plantilla 1</h3>
+      </a>
+    </div>
+    <div class="template">
+      <a href="#" onclick="mostrarModal('plantillas/plantilla2/index.html')">
+        <img src="plantillas/plantilla2/thumbnail.jpg" alt="Plantilla 2">
+        <h3>Plantilla 2</h3>
+      </a>
+    </div>
+    <!-- Agrega más bloques "template" para tus otras plantillas -->
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <iframe id="iframeModal" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
