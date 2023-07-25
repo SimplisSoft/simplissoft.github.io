@@ -1,5 +1,20 @@
 /* Resto del código de styles.css */
 
+body{
+    background-color: #818181;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0; /* Aumentamos el margen para dar más espacio alrededor del encabezado */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; /* Aumentamos un poco el peso de la fuente para que sea más visible */
+  font-size: 36px; /* Aumentamos el tamaño de la fuente */
+  color: #555; /* Cambiamos el color a un tono más oscuro */
+  text-transform: uppercase; /* Convertimos el texto a mayúsculas para mayor impacto */
+}
+
+
 /* Estilo para el modal */
 .modal {
     display: none;
@@ -13,12 +28,12 @@
   }
   
   .modal-content {
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 50px auto;
     padding: 20px;
     width: 80%;
     max-width: 800px;
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
   }
@@ -27,31 +42,132 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 30px;
-    color: #ffffff;
+    left: auto;
+    font-size: 20px;
+    color: #000000;
     cursor: pointer;
-    background-color: black;
-    border-radius: 50%;
+    background-color: #ff00004b; /* Cambiamos el color de fondo a un tono gris oscuro */
+    padding: 8px; /* Añadimos un poco de espacio interno al botón */
+    border: none; /* Quitamos el borde para un aspecto más limpio */
+    border-radius: 0%;
+    transition: background-color 0.3s ease; /* Agregamos una transición para el color de fondo al hacer hover */
   }
+  
+  .cerrar:hover {
+    background-color: #ff0000; /* Cambiamos el color de fondo al hacer hover */
+  }
+  
   
   iframe {
     width: 100%;
     height: 500px;
     border: none;
   }
-  
-  /* Estilo para los enlaces de las miniaturas */
-  .gallery .template a {
-    text-decoration: none;
-    color: #333;
-    display: block;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .gallery .template a:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Resto del código de styles.css */
-  
+
+ /* Estilos para la galería */
+.gallery {
+  display: grid; /* Cambiamos a grid para un diseño más flexible */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Columnas automáticas con ancho mínimo de 200px */
+  grid-gap: 10px; /* Espacio entre las miniaturas */
+  justify-items: center; /* Centramos horizontalmente las miniaturas */
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* Estilo para los enlaces de las miniaturas */
+.gallery .template a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .template a:hover {
+  transform: scale(1.1); /* Aumentamos un poco el tamaño al hacer hover */
+}
+
+.gallery .template img {
+  width: 100%; /* Aseguramos que la imagen ocupe todo el espacio del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  object-fit: cover; /* Ajustamos la imagen sin distorsión */
+  border-radius: 8px; /* Redondeamos las esquinas de la imagen */
+}
+
+
+.btn-neon{
+  background-color: #30303000;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f90421;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 13px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.btn-neon:hover{
+  background: #ffffff;
+  box-shadow: 0 0 10px #f90421, 0 0 40px #f90421, 0 0 80px #f90421;
+  transition-delay: 1s;
+}
+.btn-neon span{
+  position: absolute;
+  display: block;
+}
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent,#f90421);
+}
+.btn-neon:hover #span1{
+  left: 100%;
+  transition: 1s;
+}
+#span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#f90421);
+}
+.btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#f90421);
+}
+.btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#f90421);
+}
+.btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
