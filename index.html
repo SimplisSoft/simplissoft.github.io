@@ -145,13 +145,13 @@
                 <img src="assets/img/about-visual.png" alt="About Us">
               </div>
               <div class="about--options">
-                <a href="templates.html" target="_blank">
-                  <h3>Snippet html</h3>
+                <a href="#" onclick="mostrarModal('templates/p1/index.html')">
+                  <h3>Html e-amil</h3>
                 </a>
-                <a href="#0">
+                <a href="#" onclick="mostrarModal('templates/p2/index.html')">
                   <h3></h3>
                 </a>
-                <a href="#0">
+                <a href="#" onclick="mostrarModal('templates/p3/index.html')">
                   <h3></h3>
                 </a>
               </div>
@@ -274,9 +274,17 @@
   </ul>
 </div>
 
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <iframe id="iframeModal" frameborder="0"></iframe>
+  </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
-<script src="popup.js"></script>
+<script src="assets/js/scripts.js"></script>
 </body>
 </html>
