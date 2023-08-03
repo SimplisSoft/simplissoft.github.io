@@ -1782,3 +1782,24 @@ body {
   transition: 1s;
   transition-delay: 0.75s;
 }
+
+/* Estilos del botón */
+        .custom-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        /* Estilos para cambiar el color del SVG */
+        .custom-button img {
+            fill: #fff;
+        }
+
+        /* Estilos para el hover del botón */
+        .custom-button:hover {
+            background-color: #2980b9;
+        }
