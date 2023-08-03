@@ -1,0 +1,84 @@
+body{
+  background-color: rgb(43, 43, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+.tables{
+  display: inline-block;
+  height: 100%;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.tableone{
+}
+
+.tabletwo{
+}
+
+h1{
+  text-align: center;
+  background-color: #3700ff;
+}
+
+table tr:first-child {
+  background-color: #ff0000;
+}
+
+.columnone{
+  background-color: aqua;
+
+}
+
+.columntwo{
+  background-color: rgb(255, 255, 0);
+  margin-left: 5%;
+}
+
+.columnthree{
+  background-color: rgb(255, 0, 255);
+  margin-left: 5%;
+}
+
+/* Resto del estilo CSS */
+
+#texto {
+  background-color: aqua;
+  margin-top: 10px; /* Añadimos margen arriba del cuadro de texto */
+  width: 100%; /* Hacemos que el cuadro de texto ocupe el 100% del ancho disponible */
+  border-radius: 5px;
+  border: none;
+}
+
+.button-container {
+  text-align: center; /* Centramos los botones horizontalmente */
+  margin-top: 10px; /* Añadimos margen arriba del contenedor de botones */
+}
+
+.button {
+  background-color: rgb(0, 255, 0);
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px; /* Añadimos margen entre los botones */
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* Resto del estilo CSS */

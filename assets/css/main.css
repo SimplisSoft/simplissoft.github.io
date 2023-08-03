@@ -1641,8 +1641,8 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999; /* Asegura que el modal esté encima del resto del contenido */
   }
-  
-  
+
+
   .modal-content {
     background-color: #0f33ff;
     margin: 50px auto;
@@ -1653,7 +1653,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
   }
-  
+
  /* Estilos generales del botón "Cerrar" */
  .cerrar {
   position: absolute;
@@ -1676,10 +1676,109 @@ body {
   transform: scale(1.1);
 }
 
-  
+
   iframe {
     width: 100%;
     height: 500px;
     border: none;
   }
 
+  .blog-post {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.blog-post p {
+    line-height: 1.6;
+}
+
+.blog-post .date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+
+
+.btn-neon{
+  background-color: #30303000;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #0f33ff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 13px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.btn-neon:hover{
+  background: #ffffff;
+  box-shadow: 0 0 10px #0f33ff, 0 0 40px #0f33ff, 0 0 80px #0f33ff;
+  transition-delay: 1s;
+}
+.btn-neon span{
+  position: absolute;
+  display: block;
+}
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent,#0f33ff);
+}
+.btn-neon:hover #span1{
+  left: 100%;
+  transition: 1s;
+}
+#span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#0f33ff);
+}
+.btn-neon:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#0f33ff);
+}
+.btn-neon:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#0f33ff);
+}
+.btn-neon:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}

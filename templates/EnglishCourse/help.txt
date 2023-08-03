@@ -1,0 +1,30 @@
+Por supuesto, aquí tienes una lista con algunas de las etiquetas HTML más comunes:
+
+1. `<html>`: Define el inicio y fin del documento HTML.
+2. `<head>`: Contiene metadatos e información sobre el documento.
+3. `<title>`: Define el título de la página que se muestra en la pestaña del navegador.
+4. `<body>`: Contiene el contenido visible de la página web.
+5. `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`: Encabezados de diferentes niveles (del 1 al 6).
+6. `<p>`: Define un párrafo.
+7. `<a>`: Crea un enlace o hipervínculo a otra página web o recurso.
+8. `<img>`: Inserta una imagen en la página.
+9. `<ul>`: Crea una lista desordenada.
+10. `<ol>`: Crea una lista ordenada.
+11. `<li>`: Define un elemento de lista.
+12. `<div>`: Define un contenedor de bloques que se puede utilizar para agrupar elementos.
+13. `<span>`: Define un contenedor en línea para aplicar estilos o manipulaciones de texto.
+14. `<table>`: Crea una tabla.
+15. `<tr>`: Define una fila en una tabla.
+16. `<td>`: Define una celda de datos en una tabla.
+17. `<th>`: Define una celda de encabezado en una tabla.
+18. `<form>`: Crea un formulario para enviar datos al servidor web.
+19. `<input>`: Define un campo de entrada, como un cuadro de texto o un botón.
+20. `<textarea>`: Crea un área de texto de múltiples líneas para la entrada de texto.
+21. `<button>`: Define un botón.
+22. `<select>`: Crea una lista desplegable.
+23. `<option>`: Define una opción dentro de un elemento `<select>`.
+24. `<label>`: Etiqueta que se asocia con un elemento de formulario para proporcionar una descripción del campo.
+25. `<br>`: Inserta un salto de línea (espacio en blanco) en el contenido.
+26. `<hr>`: Crea una línea horizontal para separar contenido.
+
+Recuerda que esta lista incluye solo algunas de las etiquetas HTML más comunes. Hay muchas otras etiquetas y atributos que se pueden utilizar para crear páginas web más complejas y con un diseño más sofisticado.
