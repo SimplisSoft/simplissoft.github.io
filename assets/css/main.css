@@ -498,7 +498,7 @@ body {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #0f33ff;
+  background-color: #5170FF;
   border: none;
   opacity: 0;
   visibility: hidden;
@@ -582,7 +582,7 @@ body {
   content: "05";
 }
 .side-nav li.is-active {
-  color: #0f33ff;
+  color: #5170FF;
   -webkit-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
 }
@@ -641,7 +641,7 @@ body {
   left: 0;
   width: 30px;
   height: 4px;
-  background-color: #0f33ff;
+  background-color: #5170FF;
 }
 .intro--banner h1 {
   position: relative;
@@ -664,7 +664,7 @@ body {
   left: 23px;
   right: 0;
   height: 100%;
-  background-color: #0f33ff;
+  background-color: #5170FF;
   z-index: -1;
   -webkit-transition: left 0.2s ease-in-out;
   transition: left 0.2s ease-in-out;
@@ -1086,20 +1086,21 @@ body {
   height: 75px;
   text-decoration: none;
   color: #fff;
-  border: 10px solid #0f33ff;
+  border: 10px solid #5170FF;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .about--options > a:nth-child(1) {
-  background-image: url("../img/about-winners.jpg");
+  background-image: url("../img/simplissoft.jpg");
 }
 .about--options > a:nth-child(2) {
-  background-image: url("../img/about-philosophy.jpg");
+  background-image: url("../img/simplissoft.jpg");
 }
 .about--options > a:nth-child(3) {
-  background-image: url("../img/about-history.jpg");
+  background-image: url("../img/simplissoft.jpg");
 }
+
 .about--options > a:hover h3 {
   bottom: -50px;
 }
@@ -1112,6 +1113,7 @@ body {
   -webkit-transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out;
   transition: bottom 0.2s ease-in-out, left 0.2s ease-in-out;
 }
+
 @media (max-width: 767px) {
   .about--banner {
     height: 305px;
@@ -1239,14 +1241,14 @@ body {
   margin: 0 auto 25px auto;
 }
 .contact--lockup .modal--options li:nth-child(1) {
-  background-color: #1769ff;
+  background-color: #5170FF;
 }
 .contact--lockup .modal--options li:nth-child(2) {
   background-color: #ea4c89;
 }
 .contact--lockup .modal--options li:nth-child(3) {
   margin-bottom: 0;
-  background-color: #0f33ff;
+  background-color: #5170FF;
   text-transform: uppercase;
 }
 .contact--lockup .modal--options a {
@@ -1276,6 +1278,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 1180px) {
   .hire {
@@ -1311,7 +1314,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #0f33ff;
+  background-color: #5170FF;
   border: none;
   border-radius: 0;
 }
@@ -1385,8 +1388,8 @@ body {
   display: none;
 }
 .work-request--options input[type="checkbox"]:checked + label {
-  background-color: #0f33ff;
-  border-color: #0f33ff;
+  background-color: #5170FF;
+  border-color: #5170FF;
 }
 .work-request--options input[type="checkbox"]:checked + label svg {
   width: 15px;
@@ -1417,7 +1420,7 @@ body {
   padding: 0 0 5px 0;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #D9D9D8;
   border-radius: 0;
 }
 .work-request--information input[type="text"]:focus,
@@ -1502,7 +1505,7 @@ body {
   -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
   transform: translateZ(0) translateX(0) rotateY(0deg);
   min-height: 100%;
-  outline: 30px solid #0f33ff;
+  outline: 30px solid #5170FF;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
@@ -1527,7 +1530,7 @@ body {
 .effect-rotate-left--animate .container {
   -webkit-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
   transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
-  outline: 30px solid #0f33ff;
+  outline: 30px solid #5170FF;
 }
 .outer-nav {
   position: absolute;
@@ -1594,7 +1597,7 @@ body {
   width: 110%;
   height: 15px;
   opacity: 0;
-  background-color: #0f33ff;
+  background-color: #5170FF;
 }
 .outer-nav > li.is-active::before {
   opacity: 1;
@@ -1644,7 +1647,7 @@ body {
 
 
   .modal-content {
-    background-color: #0f33ff;
+    background-color: #5170FF;
     margin: 50px auto;
     padding: 20px;
     width: 80%;
@@ -1661,7 +1664,7 @@ body {
   right: 10px;
   left: auto;
   font-size: 10px;
-  color: #ffffff;
+  color: #D9D9D8;
   cursor: pointer;
   background-color: #ff69b4;
   padding: 10px 15px;
@@ -1714,7 +1717,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #0f33ff;
+  color: #5170FF
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 13px;
@@ -1725,10 +1728,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
+  border: none;
 }
+
 .btn-neon:hover{
-  background: #ffffff;
-  box-shadow: 0 0 10px #0f33ff, 0 0 40px #0f33ff, 0 0 80px #0f33ff;
+  background: #D9D9D8;
+  box-shadow: 0 0 10px #5170FF, 0 0 40px #5170FF, 0 0 80px #5170FF;
   transition-delay: 1s;
 }
 .btn-neon span{
@@ -1740,7 +1745,7 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent,#0f33ff);
+  background: linear-gradient(90deg, transparent,#5170FF);
 }
 .btn-neon:hover #span1{
   left: 100%;
@@ -1751,7 +1756,7 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent,#0f33ff);
+  background: linear-gradient(270deg, transparent,#5170FF);
 }
 .btn-neon:hover #span3{
   right: 100%;
@@ -1763,7 +1768,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg,transparent,#0f33ff);
+  background: linear-gradient(180deg,transparent,#5170FF);
 }
 .btn-neon:hover #span2{
   top: 100%;
@@ -1775,7 +1780,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg,transparent,#0f33ff);
+  background: linear-gradient(360deg,transparent,#5170FF);
 }
 .btn-neon:hover #span4{
   bottom: 100%;
@@ -1783,23 +1788,3 @@ body {
   transition-delay: 0.75s;
 }
 
-/* Estilos del botón */
-        .custom-button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: #3498db;
-            color: #fff;
-        }
-
-        /* Estilos para cambiar el color del SVG */
-        .custom-button img {
-            fill: #fff;
-        }
-
-        /* Estilos para el hover del botón */
-        .custom-button:hover {
-            background-color: #2980b9;
-        }
