@@ -989,6 +989,9 @@ body {
     max-width: 100%;
   }
 }
+
+/* Particulas */
+
 .about--banner {
   position: relative;
   height: 475px;
@@ -1000,7 +1003,7 @@ body {
   left: 200px;
   -webkit-transform: rotate(-25deg);
   transform: rotate(-25deg);
-  border: 5px solid #0f33ff;
+  border: 5px solid #0fa7ff7e;
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
@@ -1732,8 +1735,8 @@ body {
 }
 
 .btn-neon:hover{
-  background: #D9D9D8;
-  box-shadow: 0 0 10px #5170FF, 0 0 40px #5170FF, 0 0 80px #5170FF;
+  background: #0c0c0c;
+  box-shadow: 0 0 5px #5170FF, 0 0 10px #5170FF, 0 0 20px #5170FF;
   transition-delay: 1s;
 }
 .btn-neon span{
