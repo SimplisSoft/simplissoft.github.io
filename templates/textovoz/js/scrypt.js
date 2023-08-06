@@ -46,3 +46,13 @@ function resaltarPalabra(palabraIndex) {
       }
   }
 }
+
+function limpiarTexto() {
+  // Obtiene el campo de entrada por su id
+  var campo = document.getElementById("miCampo");
+  // Comprueba si el valor actual del campo de entrada coincide con el valor predeterminado
+  if (campo.value === "Ingresa tu texto aquí") {
+    // Si es igual, borra el contenido del campo
+    campo.value = "";
+  }
+}
