@@ -1658,6 +1658,17 @@ body {
     border-radius: 0px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
+
+
+    overflow-y: auto;
+    z-index: 1;
+    overflow-x: hidden;
+
+    display: flex;
+    transition: 0.3s;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
   }
 
  /* Estilos generales del botón "Cerrar" */
@@ -1720,7 +1731,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #5170FF
+  color: #5170FF;
   letter-spacing: 1px;
   text-decoration: none;
   font-size: 13px;
