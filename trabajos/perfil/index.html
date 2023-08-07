@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Carlos A. Correa</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="sidebar">
+  <button class="sidebar__toggle" type="button" aria-label="Toggle sidebar">🌐</button>
+  <ul class="sidebar__navigation sidebar-navigation">
+    <li class="sidebar-navigation__item">
+      <a class="sidebar-navigation__link" onclick="changeLanguage('es')">Español</a>
+    </li>
+    <li class="sidebar-navigation__item">
+      <a class="sidebar-navigation__link" onclick="changeLanguage('en')">English</a>
+    </li>
+    <li class="sidebar-navigation__item">
+      <a class="sidebar-navigation__link" onclick="changeLanguage('pt')">Português</a>
+    </li>
+
+  </ul>
+</div>
+
+
+<div class="contenedor">
+  <!-- Contenido del contenedor aquí -->
+  <a href="https://simplissoft.github.io/" src="logo.png" alt="Logo" class="logo">
+  <img src="logo.png" alt="Logo" class="logo">
+</a>
+</div>
+
+
 <!-- partial:index.partial.html -->
+
 <div class="card" data-state="#about">
   <div class="card-header">
     <div class="card-cover" style="background-image: url('fondoperfil.png')"></div>
@@ -20,8 +45,21 @@
     <div class="card-section is-active" id="about">
       <div class="card-content">
         <div class="card-subtitle"></div>
-        <p class="card-desc">Hola, Soy Carlos, estudiante de programación web full stack. <br>
-        La creatividad es la inteligencia divirtiéndose. "Albert Einstein"</p>
+        <!-- Contenido en español -->
+        <p class="card-desc" data-lang="es">
+          Hola, soy Carlos, desarrollador web full stack. <br>
+          La creatividad es la inteligencia divirtiéndose. "Albert Einstein"
+        </p>
+        <!-- Contenido en inglés -->
+        <p class="card-desc" data-lang="en" style="display: none;">
+          Hello, I am Carlos, a full stack web developer. <br>
+          Creativity is intelligence having fun. "Albert Einstein"
+        </p>
+        <!-- Contenido en portugués -->
+        <p class="card-desc" data-lang="pt" style="display: none;">
+          Olá, eu sou Carlos, desenvolvedor web full stack. <br>
+          A criatividade é a inteligência se divertindo. "Albert Einstein"
+        </p>
       </div>
       <div class="card-social">
         <a href="https://www.instagram.com/avelinocarloscorrea"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -34,19 +72,215 @@
     </div>
     <div class="card-section" id="experience">
       <div class="card-content">
-        <div class="card-subtitle">EXPERIENCIA</div>
-        <p>"El único límite para alcanzar tus sueños es tu imaginación. Cada paso que das hacia lo desconocido te acerca más a lo que siempre has querido ser."
-          <br>
-          <br>
+        <div class="card-subtitle" data-lang="es">Habilidades técnicas y conocimientos</div>
+        <p data-lang="es">
+          <b>"El único límite para alcanzar tus sueños es tu imaginación. Cada paso que das hacia lo desconocido te acerca más a lo que siempre has querido ser."</b>
+          <br><br>
 
-          Mi objetivo es contribuir al mundo digital con soluciones innovadoras y creativas. Como entusiasta de la música clásica, encuentro en Beethoven una fuente de inspiración para abordar los desafíos con perseverancia y dedicación. Mi experiencia en proyectos web ha fortalecido mi habilidad para trabajar en equipo y encontrar soluciones eficientes. Con 21 años de edad, me caracterizo por ser ambicioso y orientado a resultados. Me esfuerzo por superar constantemente mis límites y mantenerme al tanto de las últimas tendencias y tecnologías en el campo de la programación. Además, valoro la ética y la integridad como principios fundamentales en mi vida profesional y personal. Siempre estoy dispuesto a colaborar y aprender de otros profesionales para seguir creciendo en mi carrera. Estoy entusiasmado por las oportunidades que el futuro tiene reservado para mí en el ámbito de la programación web y ansioso por seguir contribuyendo al éxito y desarrollo de proyectos digitales. ¡No dudes en contactarme para conectarnos y explorar posibles colaboraciones! ¡Gracias por visitar mi perfil!
+          <b>Lenguajes de programación:</b><br>
+          _HTML: Para crear la estructura y contenido de las páginas web.<br>
+          _CSS: Para estilizar y dar formato a las páginas web.<br>
+          _JavaScript: Para agregar interactividad y dinamismo a las páginas.<br>
+          <br><br>
+
+          <b>Frameworks y bibliotecas:</b><br>
+          _CSS: Bootstrap, Foundation, Materialize.<br>
+          _JavaScript: React, Angular, Vue.js.<br>
+          <br><br>
+
+          <b>Diseño y maquetación:</b><br>
+          _Diseño web responsive (adaptativo) para diferentes dispositivos y tamaños de pantalla.<br>
+          _Conocimientos de diseño gráfico y uso de herramientas como Adobe Photoshop, Sketch, o Figma.<br>
+          <br><br>
+
+          <b>Backend y bases de datos:</b><br>
+          _Lenguajes de servidor como PHP, Python, Node.js, Ruby, etc.<br>
+          _Bases de datos SQL (MySQL, PostgreSQL) y NoSQL (MongoDB).<br>
+          <br><br>
+
+          <b>Control de versiones:</b><br>
+          _Git y plataformas de alojamiento como GitHub o GitLab.<br>
+          <b>APIs y servicios web:</b><br>
+          _Consumo y creación de APIs RESTful.<br>
+          _Integración con servicios de terceros (Google Maps, redes sociales, etc.).<br>
+          <br><br>
+
+          <b>Gestión de proyectos y colaboración:</b><br>
+          _Metodologías ágiles como Scrum o Kanban.<br>
+          _Herramientas de colaboración como Trello, Asana o Slack.<br>
+          <br><br>
+
+          <b>Optimización y rendimiento:</b><br>
+          _Minificación y compresión de archivos para mejorar la velocidad de carga del sitio.<br>
+          _Prácticas de optimización de SEO.<br>
+          <br><br>
+
+          <b>Seguridad web:</b><br>
+          _Protección contra ataques comunes como inyección de código, cross-site scripting (XSS), etc.<br>
+          _Uso de HTTPS y buenas prácticas de seguridad en el manejo de contraseñas y datos sensibles.<br>
+          <br><br>
+
+          <b>Testing y depuración:</b><br>
+          _Uso de herramientas de desarrollo del navegador (por ejemplo, Chrome DevTools).<br>
+          _Pruebas de unidad y pruebas de integración para asegurar la calidad del código.<br>
+          <br><br>
+
+          <b>Conocimientos de servidores web y hosting:</b><br>
+          _Configuración y administración de servidores web (por ejemplo, Apache, Nginx).<br>
+          _Alojamiento y despliegue de sitios web en servicios de hosting o servidores en la nube (por ejemplo, AWS, Azure, DigitalOcean).<br>
+          <br><br>
+
+          <b>Adaptabilidad y aprendizaje constante:</b><br>
+          _La tecnología web evoluciona constantemente, por lo que un buen desarrollador web debe mantenerse actualizado con las últimas tendencias y tecnologías.
         </p>
+
+
+                <!-- Contenido en inglés -->
+
+
+        <div class="card-subtitle" data-lang="en" style="display: none;">Technical Skills and Knowledge</div>
+        <p data-lang="en" style="display: none;">
+          <b>"The only limit to reach your dreams is your imagination. Every step you take into the unknown brings you closer to what you've always wanted to be."</b>
+          <br><br>
+
+          <b>Programming Languages:</b><br>
+          _HTML: To create the structure and content of web pages.<br>
+          _CSS: To style and format web pages.<br>
+          _JavaScript: To add interactivity and dynamism to web pages.<br>
+          <br><br>
+
+          <b>Frameworks and Libraries:</b><br>
+          _CSS: Bootstrap, Foundation, Materialize.<br>
+          _JavaScript: React, Angular, Vue.js.<br>
+          <br><br>
+
+          <b>Design and Layout:</b><br>
+          _Responsive Web Design for different devices and screen sizes.<br>
+          _Knowledge of graphic design and use of tools like Adobe Photoshop, Sketch, or Figma.<br>
+          <br><br>
+
+          <b>Backend and Databases:</b><br>
+          _Server-side languages like PHP, Python, Node.js, Ruby, etc.<br>
+          _SQL databases (MySQL, PostgreSQL) and NoSQL databases (MongoDB).<br>
+          <br><br>
+
+          <b>Version Control:</b><br>
+          _Git and hosting platforms like GitHub or GitLab.<br>
+          <br><br>
+
+          <b>APIs and Web Services:</b><br>
+          _Consumption and creation of RESTful APIs.<br>
+          _Integration with third-party services (Google Maps, social networks, etc.).<br>
+          <br><br>
+
+          <b>Project Management and Collaboration:</b><br>
+          _Agile methodologies like Scrum or Kanban.<br>
+          _Collaboration tools like Trello, Asana, or Slack.<br>
+          <br><br>
+
+          <b>Optimization and Performance:</b><br>
+          _Minification and compression of files to improve site loading speed.<br>
+          _SEO optimization practices.<br>
+          <br><br>
+
+          <b>Web Security:</b><br>
+          _Protection against common attacks like code injection, cross-site scripting (XSS), etc.<br>
+          _Use of HTTPS and good security practices in handling passwords and sensitive data.<br>
+          <br><br>
+
+          <b>Testing and Debugging:</b><br>
+          _Use of browser development tools (e.g., Chrome DevTools).<br>
+          _Unit testing and integration testing to ensure code quality.<br>
+          <br><br>
+
+          <b>Knowledge of Web Servers and Hosting:</b><br>
+          _Configuration and administration of web servers (e.g., Apache, Nginx).<br>
+          _Hosting and deployment of websites on hosting services or cloud servers (e.g., AWS, Azure, DigitalOcean).<br>
+          <br><br>
+
+          <b>Adaptability and Constant Learning:</b><br>
+          _Web technology is constantly evolving, so a good web developer must stay updated with the latest trends and technologies.
+        </p>
+
+
+
+
+        <!--contenido en portugues-->
+
+
+        <div class="card-subtitle" data-lang="pt" style="display: none;">Habilidades técnicas e conhecimentos</div>
+        <p data-lang="pt" style="display: none;">
+          <b>"O único limite para alcançar seus sonhos é a sua imaginação. Cada passo que você dá rumo ao desconhecido o aproxima do que sempre quis ser."</b>
+          <br><br>
+
+          <b>Linguagens de programação:</b><br>
+          _HTML: Para criar a estrutura e o conteúdo das páginas da web.<br>
+          _CSS: Para estilizar e dar formato às páginas da web.<br>
+          _JavaScript: Para adicionar interatividade e dinamismo às páginas.<br>
+          <br><br>
+
+          <b>Frameworks e bibliotecas:</b><br>
+          _CSS: Bootstrap, Foundation, Materialize.<br>
+          _JavaScript: React, Angular, Vue.js.<br>
+          <br><br>
+
+          <b>Design e layout:</b><br>
+          _Design responsivo para diferentes dispositivos e tamanhos de tela.<br>
+          _Conhecimentos em design gráfico e uso de ferramentas como Adobe Photoshop, Sketch ou Figma.<br>
+          <br><br>
+
+          <b>Backend e bancos de dados:</b><br>
+          _Linguagens de servidor como PHP, Python, Node.js, Ruby, etc.<br>
+          _Bancos de dados SQL (MySQL, PostgreSQL) e NoSQL (MongoDB).<br>
+          <br><br>
+
+          <b>Controle de versões:</b><br>
+          _Git e plataformas de hospedagem como GitHub ou GitLab.<br>
+          <b>APIs e serviços web:</b><br>
+          _Consumo e criação de APIs RESTful.<br>
+          _Integração com serviços de terceiros (Google Maps, redes sociais, etc.).<br>
+          <br><br>
+
+          <b>Gestão de projetos e colaboração:</b><br>
+          _Metodologias ágeis como Scrum ou Kanban.<br>
+          _Ferramentas de colaboração como Trello, Asana ou Slack.<br>
+          <br><br>
+
+          <b>Otimização e desempenho:</b><br>
+          _Minificação e compressão de arquivos para melhorar a velocidade de carregamento do site.<br>
+          _Práticas de otimização de SEO.<br>
+          <br><br>
+
+          <b>Segurança web:</b><br>
+          _Proteção contra ataques comuns, como injeção de código, cross-site scripting (XSS), etc.<br>
+          _Uso de HTTPS e boas práticas de segurança no manuseio de senhas e dados sensíveis.<br>
+          <br><br>
+
+          <b>Testes e depuração:</b><br>
+          _Uso de ferramentas de desenvolvimento do navegador (por exemplo, Chrome DevTools).<br>
+          _Testes de unidade e integração para garantir a qualidade do código.<br>
+          <br><br>
+
+          <b>Conhecimentos de servidores web e hospedagem:</b><br>
+          _Configuração e administração de servidores web (por exemplo, Apache, Nginx).<br>
+          _Hospedagem e implantação de sites em serviços de hospedagem ou servidores em nuvem (por exemplo, AWS, Azure, DigitalOcean).<br>
+          <br><br>
+
+          <b>Adaptabilidade e aprendizado contínuo:</b><br>
+          _A tecnologia web está em constante evolução, então um bom desenvolvedor web precisa se manter atualizado com as últimas tendências e tecnologias.
+        </p>
+
+
+
+
         </div>
       </div>
     </div>
     <div class="card-section" id="contact">
       <div class="card-content">
-        <div class="card-subtitle">CONTACT</div>
+        <div class="card-subtitle" data-lang="es">CONTACTO</div>
+        <div class="card-subtitle" data-lang="en" style="display: none;">CONTACT</div>
+        <div class="card-subtitle" data-lang="pt" style="display: none;">CONTATO</div>
         <div class="card-contact-wrapper">
           <div class="card-contact">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -72,13 +306,34 @@
               window.location.href = "https://github.com/CarlosAvelinoCorrea";
             });
           </script>
+
+          <script>
+              // Función para cambiar el idioma de la página
+              function changeLanguage(lang) {
+                const langElements = document.querySelectorAll("[data-lang]");
+                for (const element of langElements) {
+                  element.style.display = element.getAttribute("data-lang") === lang ? "block" : "none";
+                }
+              }
+            </script>
+
         </div>
       </div>
     </div>
     <div class="card-buttons">
-      <button data-section="#about" class="is-active">PERFIL</button>
-      <button data-section="#experience">EXPERIENCIA</button>
-      <button data-section="#contact">CONTACTO</button>
+      <button data-section="#about" class="is-active" data-lang="es">Perfil</button>
+      <button data-section="#experience" data-lang="es">Experencia</button>
+      <button data-section="#contact" data-lang="es">Contacto</button>
+
+      <button data-section="#about" class="is-active" data-lang="en" style="display: none;">Profile</button>
+      <button data-section="#experience" data-lang="en" style="display: none;">Knowledge</button>
+      <button data-section="#contact" data-lang="en" style="display: none;">Contact</button>
+
+      <button data-section="#about" class="is-active" data-lang="pt" style="display: none;">Perfil</button>
+      <button data-section="#experience" data-lang="pt" style="display: none;">Conhecimentos</button>
+      <button data-section="#contact" data-lang="pt" style="display: none;">Contato</button>
+
+
     </div>
   </div>
 </div>

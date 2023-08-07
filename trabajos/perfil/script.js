@@ -18,3 +18,12 @@ const handleButtonClick = e => {
 buttons.forEach(btn => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+var toggleBtn = document.querySelector('.sidebar__toggle');
+var sidebar = document.querySelector('.sidebar');
+
+toggleBtn.addEventListener('click', clickToggleBtnHandler);
+
+function clickToggleBtnHandler() {
+  sidebar.classList.toggle('sidebar--active');
+}
