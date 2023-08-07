@@ -26,4 +26,4 @@ toggleBtn.addEventListener('click', clickToggleBtnHandler);
 
 function clickToggleBtnHandler() {
   sidebar.classList.toggle('sidebar--active');
-}
+}F
